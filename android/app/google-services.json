@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "723467481764",
+    "project_id": "duan1-cee2a",
+    "storage_bucket": "duan1-cee2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723467481764:android:d4e9f8c9f6a4a6a5b62c31",
+        "android_client_info": {
+          "package_name": "com.example.coffemanger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723467481764-0vbvb5im45merrc6lnu72ke7v74hf43s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5NRBjmX1hYufWN1FVbHsT7ApzpGLv3N8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723467481764-0vbvb5im45merrc6lnu72ke7v74hf43s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
