@@ -1,5 +1,6 @@
 import 'package:coffemanger/trangtru.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class waitorder extends StatelessWidget {
   final String tien;
@@ -22,9 +23,10 @@ class waitorder extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              const Text(
+              Text(
                 "Nhân viên đang chuẩn bị thức uống",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                style: GoogleFonts.aBeeZee(
+                    fontSize: 20, fontWeight: FontWeight.w500),
               ),
               const SizedBox(
                 height: 10,
@@ -32,7 +34,8 @@ class waitorder extends StatelessWidget {
               Text(
                 "vui lòng chuẩn bị ${tien}k \n xin cảm ơn",
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                style: GoogleFonts.aBeeZee(
+                    fontSize: 20, fontWeight: FontWeight.w500),
               ),
               SizedBox(
                 height: 20,

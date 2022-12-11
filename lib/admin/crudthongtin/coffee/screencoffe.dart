@@ -2,6 +2,7 @@ import 'package:coffemanger/admin/crudthongtin/coffee/editpagecf.dart';
 import 'package:coffemanger/data/model/product_fb.dart';
 import 'package:coffemanger/data/remote_data_source/firebase_helper.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class udcoffee extends StatefulWidget {
   const udcoffee({super.key});
@@ -62,7 +63,7 @@ class _udcoffeeState extends State<udcoffee> {
                                     "Name:${productcf.namecf}",
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(
+                                    style: GoogleFonts.aBeeZee(
                                         fontSize: 18,
                                         fontWeight: FontWeight.w700),
                                   ),
@@ -70,7 +71,7 @@ class _udcoffeeState extends State<udcoffee> {
                                     "Price: ${productcf.pricecf}.000",
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(
+                                    style: GoogleFonts.aBeeZee(
                                         fontSize: 18,
                                         fontWeight: FontWeight.w700),
                                   ),
@@ -78,7 +79,7 @@ class _udcoffeeState extends State<udcoffee> {
                                     "Type:${productcf.typecf}",
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(
+                                    style: GoogleFonts.aBeeZee(
                                         fontSize: 18,
                                         fontWeight: FontWeight.w700),
                                   ),
@@ -86,7 +87,7 @@ class _udcoffeeState extends State<udcoffee> {
                                     "describe:${productcf.desciptioncf}",
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(
+                                    style: GoogleFonts.aBeeZee(
                                         fontSize: 18,
                                         fontWeight: FontWeight.w700),
                                   ),
@@ -190,35 +191,35 @@ class _udcoffeeState extends State<udcoffee> {
                         "Name:",
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
+                        style: GoogleFonts.aBeeZee(
                             fontSize: 18, fontWeight: FontWeight.w700),
                       ),
                       Text(
                         "Price:",
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
+                        style: GoogleFonts.aBeeZee(
                             fontSize: 18, fontWeight: FontWeight.w700),
                       ),
                       Text(
                         "Type:",
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
+                        style: GoogleFonts.aBeeZee(
                             fontSize: 18, fontWeight: FontWeight.w700),
                       ),
                       Text(
                         "Type:",
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
+                        style: GoogleFonts.aBeeZee(
                             fontSize: 18, fontWeight: FontWeight.w700),
                       ),
                       Text(
                         "describe:",
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
+                        style: GoogleFonts.aBeeZee(
                             fontSize: 18, fontWeight: FontWeight.w700),
                       ),
                     ],

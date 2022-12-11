@@ -10,6 +10,7 @@ import 'package:coffemanger/userscreen/waitorder.dart';
 // import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ordersucces extends StatefulWidget {
   final String tenban;
@@ -47,7 +48,7 @@ class _ordersuccesState extends State<ordersucces> {
                         CircularProgressIndicator(),
                         Text(
                           "vui long cho 1 chut..",
-                          style: TextStyle(fontSize: 30),
+                          style: GoogleFonts.aBeeZee(fontSize: 30),
                         )
                       ],
                     ));
@@ -72,7 +73,7 @@ class _ordersuccesState extends State<ordersucces> {
                                 width: 20,
                                 child: Text(
                                   "${index + 1}.",
-                                  style: TextStyle(
+                                  style: GoogleFonts.aBeeZee(
                                       fontSize: 20,
                                       fontWeight: FontWeight.w700),
                                 ),
@@ -81,7 +82,7 @@ class _ordersuccesState extends State<ordersucces> {
                                   child: Container(
                                 child: Text(
                                   viewbills.name,
-                                  style: TextStyle(
+                                  style: GoogleFonts.aBeeZee(
                                       fontSize: 20,
                                       fontWeight: FontWeight.w700),
                                 ),
@@ -91,7 +92,7 @@ class _ordersuccesState extends State<ordersucces> {
                                 // color: Colors.blue,
                                 child: Text(
                                   "SL:${viewbills.soluong}",
-                                  style: TextStyle(
+                                  style: GoogleFonts.aBeeZee(
                                       fontSize: 20,
                                       fontWeight: FontWeight.w700),
                                 ),
@@ -102,7 +103,7 @@ class _ordersuccesState extends State<ordersucces> {
                                 // color: Colors.green,
                                 child: Text(
                                   "\$:${viewbills.giatien}",
-                                  style: TextStyle(
+                                  style: GoogleFonts.aBeeZee(
                                       fontSize: 20,
                                       fontWeight: FontWeight.w700),
                                 ),
@@ -123,7 +124,7 @@ class _ordersuccesState extends State<ordersucces> {
                         ),
                         Text(
                           "vui long cho 1 chut..",
-                          style: TextStyle(fontSize: 30),
+                          style: GoogleFonts.aBeeZee(fontSize: 30),
                         )
                       ],
                     ),
@@ -149,7 +150,7 @@ class _ordersuccesState extends State<ordersucces> {
                         ),
                         Text(
                           "vui long cho 1 chut..",
-                          style: TextStyle(fontSize: 30),
+                          style: GoogleFonts.aBeeZee(fontSize: 30),
                         )
                       ],
                     ));
@@ -164,7 +165,7 @@ class _ordersuccesState extends State<ordersucces> {
                         ),
                         Text(
                           "vui long cho 1 chut..",
-                          style: TextStyle(fontSize: 30),
+                          style: GoogleFonts.aBeeZee(fontSize: 30),
                         )
                       ],
                     ));
@@ -184,7 +185,7 @@ class _ordersuccesState extends State<ordersucces> {
                             ),
                             Text(
                               "cooking... please wait...",
-                              style: TextStyle(fontSize: 20),
+                              style: GoogleFonts.aBeeZee(fontSize: 20),
                             )
                           ],
                         ),
@@ -201,13 +202,13 @@ class _ordersuccesState extends State<ordersucces> {
                               children: [
                                 Text(
                                   "sub Total:",
-                                  style: TextStyle(
+                                  style: GoogleFonts.aBeeZee(
                                       fontSize: 20,
                                       fontWeight: FontWeight.w600),
                                 ),
                                 Text(
                                   "${bill.subtotal}",
-                                  style: TextStyle(
+                                  style: GoogleFonts.aBeeZee(
                                       fontSize: 20,
                                       fontWeight: FontWeight.w600),
                                 ),
@@ -218,13 +219,13 @@ class _ordersuccesState extends State<ordersucces> {
                               children: [
                                 Text(
                                   "giam gia %:",
-                                  style: TextStyle(
+                                  style: GoogleFonts.aBeeZee(
                                       fontSize: 20,
                                       fontWeight: FontWeight.w600),
                                 ),
                                 Text(
                                   "${bill.khuyenmai}%",
-                                  style: TextStyle(
+                                  style: GoogleFonts.aBeeZee(
                                       fontSize: 20,
                                       fontWeight: FontWeight.w600),
                                 ),
@@ -235,13 +236,13 @@ class _ordersuccesState extends State<ordersucces> {
                               children: [
                                 Text(
                                   "total money:",
-                                  style: TextStyle(
+                                  style: GoogleFonts.aBeeZee(
                                       fontSize: 20,
                                       fontWeight: FontWeight.w600),
                                 ),
                                 Text(
                                   "${bill.thanhtien}",
-                                  style: TextStyle(
+                                  style: GoogleFonts.aBeeZee(
                                       fontSize: 20,
                                       fontWeight: FontWeight.w600),
                                 ),
@@ -261,12 +262,12 @@ class _ordersuccesState extends State<ordersucces> {
                     //         children: [
                     //           Text(
                     //             "sub Total:",
-                    //             style: TextStyle(
+                    //             style: GoogleFonts.aBeeZee(
                     //                 fontSize: 20, fontWeight: FontWeight.w600),
                     //           ),
                     //           Text(
                     //             "${bill.subtotal}",
-                    //             style: TextStyle(
+                    //             style: GoogleFonts.aBeeZee(
                     //                 fontSize: 20, fontWeight: FontWeight.w600),
                     //           ),
                     //         ],
@@ -276,12 +277,12 @@ class _ordersuccesState extends State<ordersucces> {
                     //         children: [
                     //           Text(
                     //             "giam gia %:",
-                    //             style: TextStyle(
+                    //             style: GoogleFonts.aBeeZee(
                     //                 fontSize: 20, fontWeight: FontWeight.w600),
                     //           ),
                     //           Text(
                     //             "${bill.khuyenmai}%",
-                    //             style: TextStyle(
+                    //             style: GoogleFonts.aBeeZee(
                     //                 fontSize: 20, fontWeight: FontWeight.w600),
                     //           ),
                     //         ],
@@ -291,12 +292,12 @@ class _ordersuccesState extends State<ordersucces> {
                     //         children: [
                     //           Text(
                     //             "total money:",
-                    //             style: TextStyle(
+                    //             style: GoogleFonts.aBeeZee(
                     //                 fontSize: 20, fontWeight: FontWeight.w600),
                     //           ),
                     //           Text(
                     //             "${bill.thanhtien}",
-                    //             style: TextStyle(
+                    //             style: GoogleFonts.aBeeZee(
                     //                 fontSize: 20, fontWeight: FontWeight.w600),
                     //           ),
                     //         ],
@@ -316,7 +317,7 @@ class _ordersuccesState extends State<ordersucces> {
                         ),
                         Text(
                           "vui long cho 1 chut..",
-                          style: TextStyle(fontSize: 30),
+                          style: GoogleFonts.aBeeZee(fontSize: 30),
                         )
                       ],
                     ),

@@ -5,6 +5,7 @@ import 'package:coffemanger/data/remote_data_source/firebase_bill.dart';
 import 'package:coffemanger/data/remote_data_source/firebase_helper_cart.dart';
 import 'package:coffemanger/userscreen/succespage.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class cartviewNV extends StatefulWidget {
   final String tenban;
@@ -117,7 +118,7 @@ class _cartviewNVState extends State<cartviewNV> {
                                             children: [
                                               Text(
                                                 viewcart.name,
-                                                style: TextStyle(
+                                                style: GoogleFonts.aBeeZee(
                                                     color: Color.fromARGB(
                                                         255, 41, 37, 37),
                                                     fontSize: 20,
@@ -126,7 +127,7 @@ class _cartviewNVState extends State<cartviewNV> {
                                               ),
                                               Text(
                                                 "so luong: ${viewcart.soluong}",
-                                                style: TextStyle(
+                                                style: GoogleFonts.aBeeZee(
                                                     color: Color.fromARGB(
                                                         255, 41, 37, 37),
                                                     fontSize: 14,
@@ -135,14 +136,14 @@ class _cartviewNVState extends State<cartviewNV> {
                                               ),
                                               Text(
                                                 "price: ${viewcart.giatien}",
-                                                style: TextStyle(
+                                                style: GoogleFonts.aBeeZee(
                                                     color: Color.fromARGB(
                                                         255, 216, 77, 77),
                                                     fontSize: 14),
                                               ),
                                               Text(
                                                 "Type: ${viewcart.type}",
-                                                style: TextStyle(
+                                                style: GoogleFonts.aBeeZee(
                                                     color: Color.fromARGB(
                                                         255, 216, 77, 77),
                                                     fontSize: 14),
@@ -157,7 +158,7 @@ class _cartviewNVState extends State<cartviewNV> {
                                                         ? "Note: ${viewcart.ghichu}"
                                                         : "",
                                                     maxLines: 1,
-                                                    style: TextStyle(
+                                                    style: GoogleFonts.aBeeZee(
                                                         color: Color.fromARGB(
                                                             255, 216, 77, 77),
                                                         fontSize: 16),
@@ -270,13 +271,13 @@ class _cartviewNVState extends State<cartviewNV> {
                                 children: [
                                   Text(
                                     "Sub Total : ",
-                                    style: TextStyle(
+                                    style: GoogleFonts.aBeeZee(
                                         fontSize: 20,
                                         fontWeight: FontWeight.w700),
                                   ),
                                   Text(
                                     "${tongtien}\$",
-                                    style: TextStyle(
+                                    style: GoogleFonts.aBeeZee(
                                         fontSize: 20,
                                         fontWeight: FontWeight.w700),
                                   ),
@@ -291,13 +292,13 @@ class _cartviewNVState extends State<cartviewNV> {
                                   children: [
                                     Text(
                                       "giam gia :  ",
-                                      style: TextStyle(
+                                      style: GoogleFonts.aBeeZee(
                                           fontSize: 20,
                                           fontWeight: FontWeight.w700),
                                     ),
                                     Text(
                                       "${khuyenmai}%",
-                                      style: TextStyle(
+                                      style: GoogleFonts.aBeeZee(
                                           fontSize: 20,
                                           fontWeight: FontWeight.w700),
                                     ),
@@ -313,13 +314,13 @@ class _cartviewNVState extends State<cartviewNV> {
                                   children: [
                                     Text(
                                       "Thanh tien : ",
-                                      style: TextStyle(
+                                      style: GoogleFonts.aBeeZee(
                                           fontSize: 20,
                                           fontWeight: FontWeight.w700),
                                     ),
                                     Text(
                                       "${thanhtien = tongtien - (tongtien * khuyenmai / 100)}\$",
-                                      style: TextStyle(
+                                      style: GoogleFonts.aBeeZee(
                                           fontSize: 20,
                                           fontWeight: FontWeight.w700),
                                     ),

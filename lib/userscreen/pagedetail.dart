@@ -7,6 +7,7 @@ import 'package:coffemanger/data/remote_data_source/firebase_thongke.dart';
 import 'package:coffemanger/userscreen/cartview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class pageviewdetail extends StatefulWidget {
   final ProductModeCf cfdrink;
@@ -55,7 +56,7 @@ class _pageviewdetailState extends State<pageviewdetail> {
                         child: Badge(
                             badgeContent: Text(
                               '${snapshot.data?.length}',
-                              style: TextStyle(color: Colors.white),
+                              style: GoogleFonts.aBeeZee(color: Colors.white),
                             ),
                             animationDuration: Duration(milliseconds: 300),
                             child: Icon(
@@ -78,7 +79,7 @@ class _pageviewdetailState extends State<pageviewdetail> {
           centerTitle: true,
           title: Text(
             "detail product",
-            style: TextStyle(color: Colors.amber),
+            style: GoogleFonts.aBeeZee(color: Colors.amber),
           ),
         ),
         body: Padding(
@@ -133,7 +134,7 @@ class _pageviewdetailState extends State<pageviewdetail> {
                       children: [
                         Text(
                           widget.cfdrink.namecf,
-                          style: const TextStyle(
+                          style: GoogleFonts.aBeeZee(
                               fontSize: 20, fontWeight: FontWeight.w700),
                         ),
                         const SizedBox(
@@ -141,7 +142,7 @@ class _pageviewdetailState extends State<pageviewdetail> {
                         ),
                         Text(
                           "Loai: ${widget.cfdrink.typecf}",
-                          style: const TextStyle(
+                          style: GoogleFonts.aBeeZee(
                               fontSize: 12,
                               fontWeight: FontWeight.w500,
                               color: Colors.grey),
@@ -170,15 +171,16 @@ class _pageviewdetailState extends State<pageviewdetail> {
                 height: 40,
                 color: Colors.black,
               ),
-              const Text(
+              Text(
                 "product Description",
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+                style: GoogleFonts.aBeeZee(
+                    fontSize: 18, fontWeight: FontWeight.w700),
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 20),
                 child: Text(
                   widget.cfdrink.desciptioncf,
-                  style: TextStyle(fontSize: 14, color: Colors.grey),
+                  style: GoogleFonts.aBeeZee(fontSize: 14, color: Colors.grey),
                 ),
               )
             ],
@@ -217,7 +219,8 @@ class _pageviewdetailState extends State<pageviewdetail> {
               children: [
                 Text(
                   tien == 0 ? '\$ ${widget.cfdrink.pricecf}' : '\$ ${tien}',
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
+                  style: GoogleFonts.aBeeZee(
+                      fontSize: 25, fontWeight: FontWeight.w500),
                 ),
                 Container(
                   height: 40,
@@ -253,7 +256,7 @@ class _pageviewdetailState extends State<pageviewdetail> {
                       ),
                       Text(
                         "$count",
-                        style: TextStyle(
+                        style: GoogleFonts.aBeeZee(
                           fontSize: 25,
                           color: Colors.white,
                         ),
@@ -311,7 +314,7 @@ class _pageviewdetailState extends State<pageviewdetail> {
                     },
                     child: Text(
                       "Cart",
-                      style: TextStyle(
+                      style: GoogleFonts.aBeeZee(
                           fontSize: 13,
                           fontWeight: FontWeight.w700,
                           color: Color.fromARGB(255, 79, 34, 186)),

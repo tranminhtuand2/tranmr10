@@ -4,6 +4,7 @@ import 'package:coffemanger/data/remote_data_source/firebase_bill.dart';
 import 'package:coffemanger/data/remote_data_source/firebase_helper_cart.dart';
 import 'package:coffemanger/userscreen/succespage.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class cartview extends StatefulWidget {
   final String nameuser;
@@ -28,7 +29,7 @@ class _cartviewState extends State<cartview> {
               centerTitle: true,
               title: Text(
                 "cart ${widget.tenban}",
-                style: TextStyle(color: Colors.black),
+                style: GoogleFonts.aBeeZee(color: Colors.black),
               ),
               elevation: 0,
               backgroundColor: Colors.white,
@@ -104,7 +105,7 @@ class _cartviewState extends State<cartview> {
                                             children: [
                                               Text(
                                                 viewcart.name,
-                                                style: TextStyle(
+                                                style: GoogleFonts.aBeeZee(
                                                     color: Color.fromARGB(
                                                         255, 41, 37, 37),
                                                     fontSize: 20,
@@ -113,7 +114,7 @@ class _cartviewState extends State<cartview> {
                                               ),
                                               Text(
                                                 "so luong: ${viewcart.soluong}",
-                                                style: TextStyle(
+                                                style: GoogleFonts.aBeeZee(
                                                     color: Color.fromARGB(
                                                         255, 41, 37, 37),
                                                     fontSize: 14,
@@ -122,14 +123,14 @@ class _cartviewState extends State<cartview> {
                                               ),
                                               Text(
                                                 "price: ${viewcart.giatien}",
-                                                style: TextStyle(
+                                                style: GoogleFonts.aBeeZee(
                                                     color: Color.fromARGB(
                                                         255, 216, 77, 77),
                                                     fontSize: 14),
                                               ),
                                               Text(
                                                 "Type: ${viewcart.type}",
-                                                style: TextStyle(
+                                                style: GoogleFonts.aBeeZee(
                                                     color: Color.fromARGB(
                                                         255, 216, 77, 77),
                                                     fontSize: 14),
@@ -144,7 +145,7 @@ class _cartviewState extends State<cartview> {
                                                         ? "Note: ${viewcart.ghichu}"
                                                         : "",
                                                     maxLines: 1,
-                                                    style: TextStyle(
+                                                    style: GoogleFonts.aBeeZee(
                                                         color: Color.fromARGB(
                                                             255, 216, 77, 77),
                                                         fontSize: 16),
@@ -273,13 +274,13 @@ class _cartviewState extends State<cartview> {
                         //         children: [
                         //           Text(
                         //             "Sub Total : ",
-                        //             style: TextStyle(
+                        //             style: GoogleFonts.aBeeZee(
                         //                 fontSize: 20,
                         //                 fontWeight: FontWeight.w700),
                         //           ),
                         //           Text(
                         //             "${tongtien}\$",
-                        //             style: TextStyle(
+                        //             style: GoogleFonts.aBeeZee(
                         //                 fontSize: 20,
                         //                 fontWeight: FontWeight.w700),
                         //           ),
@@ -294,13 +295,13 @@ class _cartviewState extends State<cartview> {
                         //           children: [
                         //             Text(
                         //               "giam gia :  ",
-                        //               style: TextStyle(
+                        //               style: GoogleFonts.aBeeZee(
                         //                   fontSize: 20,
                         //                   fontWeight: FontWeight.w700),
                         //             ),
                         //             Text(
                         //               "${khuyenmai}%",
-                        //               style: TextStyle(
+                        //               style: GoogleFonts.aBeeZee(
                         //                   fontSize: 20,
                         //                   fontWeight: FontWeight.w700),
                         //             ),
@@ -316,13 +317,13 @@ class _cartviewState extends State<cartview> {
                         //           children: [
                         //             Text(
                         //               "Thanh tien : ",
-                        //               style: TextStyle(
+                        //               style: GoogleFonts.aBeeZee(
                         //                   fontSize: 20,
                         //                   fontWeight: FontWeight.w700),
                         //             ),
                         //             Text(
                         //               "${thanhtien = tongtien - (tongtien * khuyenmai / 100)}\$",
-                        //               style: TextStyle(
+                        //               style: GoogleFonts.aBeeZee(
                         //                   fontSize: 20,
                         //                   fontWeight: FontWeight.w700),
                         //             ),

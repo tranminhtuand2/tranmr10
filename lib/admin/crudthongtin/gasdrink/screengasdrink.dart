@@ -4,6 +4,7 @@ import 'package:coffemanger/data/model/product_fb.dart';
 import 'package:coffemanger/data/remote_data_source/firebase_helper.dart';
 import 'package:coffemanger/data/remote_data_source/firebase_helper_gasdrink.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class updategasdrinks extends StatefulWidget {
   const updategasdrinks({super.key});
@@ -64,7 +65,7 @@ class _updategasdrinksState extends State<updategasdrinks> {
                                     "Name:${productcf.namecf}",
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(
+                                    style: GoogleFonts.aBeeZee(
                                         fontSize: 18,
                                         fontWeight: FontWeight.w700),
                                   ),
@@ -72,7 +73,7 @@ class _updategasdrinksState extends State<updategasdrinks> {
                                     "Price: ${productcf.pricecf}.000",
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(
+                                    style: GoogleFonts.aBeeZee(
                                         fontSize: 18,
                                         fontWeight: FontWeight.w700),
                                   ),
@@ -80,7 +81,7 @@ class _updategasdrinksState extends State<updategasdrinks> {
                                     "Type:${productcf.typecf}",
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(
+                                    style: GoogleFonts.aBeeZee(
                                         fontSize: 18,
                                         fontWeight: FontWeight.w700),
                                   ),
@@ -88,7 +89,7 @@ class _updategasdrinksState extends State<updategasdrinks> {
                                     "describe:${productcf.desciptioncf}",
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
-                                    style: TextStyle(
+                                    style: GoogleFonts.aBeeZee(
                                         fontSize: 18,
                                         fontWeight: FontWeight.w700),
                                   ),
@@ -192,35 +193,35 @@ class _updategasdrinksState extends State<updategasdrinks> {
                         "Name:",
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
+                        style: GoogleFonts.aBeeZee(
                             fontSize: 18, fontWeight: FontWeight.w700),
                       ),
                       Text(
                         "Price:",
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
+                        style: GoogleFonts.aBeeZee(
                             fontSize: 18, fontWeight: FontWeight.w700),
                       ),
                       Text(
                         "Type:",
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
+                        style: GoogleFonts.aBeeZee(
                             fontSize: 18, fontWeight: FontWeight.w700),
                       ),
                       Text(
                         "Type:",
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
+                        style: GoogleFonts.aBeeZee(
                             fontSize: 18, fontWeight: FontWeight.w700),
                       ),
                       Text(
                         "describe:",
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
+                        style: GoogleFonts.aBeeZee(
                             fontSize: 18, fontWeight: FontWeight.w700),
                       ),
                     ],

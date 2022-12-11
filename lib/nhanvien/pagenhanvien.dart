@@ -4,6 +4,7 @@ import 'package:coffemanger/nhanvien/pageoder.dart';
 import 'package:coffemanger/nhanvien/thongke.dart';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../data/model/cart.dart';
 
@@ -54,7 +55,8 @@ class _pageNhanVienState extends State<pageNhanVien> {
                   return Badge(
                     badgeContent: Text(
                       snapshot.hasData ? ("${snapshot.data!.length}") : "0",
-                      style: TextStyle(color: Colors.white, fontSize: 20),
+                      style: GoogleFonts.aBeeZee(
+                          color: Colors.white, fontSize: 20),
                     ),
                     child: GestureDetector(
                       onTap: () {
@@ -70,7 +72,7 @@ class _pageNhanVienState extends State<pageNhanVien> {
                             top: 0,
                             child: Text(
                               b1,
-                              style: TextStyle(fontSize: 20),
+                              style: GoogleFonts.aBeeZee(fontSize: 20),
                             )),
                         Container(
                           padding: const EdgeInsets.all(8),
@@ -94,7 +96,8 @@ class _pageNhanVienState extends State<pageNhanVien> {
                   return Badge(
                     badgeContent: Text(
                       snapshot.hasData ? ("${snapshot.data!.length}") : "0",
-                      style: TextStyle(color: Colors.white, fontSize: 20),
+                      style: GoogleFonts.aBeeZee(
+                          color: Colors.white, fontSize: 20),
                     ),
                     child: GestureDetector(
                       onTap: () {
@@ -110,7 +113,7 @@ class _pageNhanVienState extends State<pageNhanVien> {
                             top: 0,
                             child: Text(
                               b2,
-                              style: TextStyle(fontSize: 20),
+                              style: GoogleFonts.aBeeZee(fontSize: 20),
                             )),
                         Container(
                           padding: const EdgeInsets.all(8),
@@ -134,7 +137,8 @@ class _pageNhanVienState extends State<pageNhanVien> {
                   return Badge(
                     badgeContent: Text(
                       snapshot.hasData ? ("${snapshot.data!.length}") : "0",
-                      style: TextStyle(color: Colors.white, fontSize: 20),
+                      style: GoogleFonts.aBeeZee(
+                          color: Colors.white, fontSize: 20),
                     ),
                     child: GestureDetector(
                       onTap: () {
@@ -150,7 +154,7 @@ class _pageNhanVienState extends State<pageNhanVien> {
                             top: 0,
                             child: Text(
                               b3,
-                              style: TextStyle(fontSize: 20),
+                              style: GoogleFonts.aBeeZee(fontSize: 20),
                             )),
                         Container(
                           padding: const EdgeInsets.all(8),
@@ -174,7 +178,8 @@ class _pageNhanVienState extends State<pageNhanVien> {
                   return Badge(
                     badgeContent: Text(
                       snapshot.hasData ? ("${snapshot.data!.length}") : "0",
-                      style: TextStyle(color: Colors.white, fontSize: 20),
+                      style: GoogleFonts.aBeeZee(
+                          color: Colors.white, fontSize: 20),
                     ),
                     child: GestureDetector(
                       onTap: () {
@@ -190,7 +195,7 @@ class _pageNhanVienState extends State<pageNhanVien> {
                             top: 0,
                             child: Text(
                               b4,
-                              style: TextStyle(fontSize: 20),
+                              style: GoogleFonts.aBeeZee(fontSize: 20),
                             )),
                         Container(
                           padding: const EdgeInsets.all(8),
@@ -213,7 +218,8 @@ class _pageNhanVienState extends State<pageNhanVien> {
                   return Badge(
                     badgeContent: Text(
                       snapshot.hasData ? ("${snapshot.data!.length}") : "0",
-                      style: TextStyle(color: Colors.white, fontSize: 20),
+                      style: GoogleFonts.aBeeZee(
+                          color: Colors.white, fontSize: 20),
                     ),
                     child: GestureDetector(
                       onTap: () {
@@ -229,7 +235,7 @@ class _pageNhanVienState extends State<pageNhanVien> {
                             top: 0,
                             child: Text(
                               b5,
-                              style: TextStyle(fontSize: 20),
+                              style: GoogleFonts.aBeeZee(fontSize: 20),
                             )),
                         Container(
                           padding: const EdgeInsets.all(8),
@@ -252,7 +258,8 @@ class _pageNhanVienState extends State<pageNhanVien> {
                   return Badge(
                     badgeContent: Text(
                       snapshot.hasData ? ("${snapshot.data!.length}") : "0",
-                      style: TextStyle(color: Colors.white, fontSize: 20),
+                      style: GoogleFonts.aBeeZee(
+                          color: Colors.white, fontSize: 20),
                     ),
                     child: GestureDetector(
                       onTap: () {
@@ -268,7 +275,7 @@ class _pageNhanVienState extends State<pageNhanVien> {
                             top: 0,
                             child: Text(
                               b6,
-                              style: TextStyle(fontSize: 20),
+                              style: GoogleFonts.aBeeZee(fontSize: 20),
                             )),
                         Container(
                           padding: const EdgeInsets.all(8),

@@ -6,6 +6,7 @@ import 'package:coffemanger/data/remote_data_source/firebase_thongke.dart';
 import 'package:coffemanger/nhanvien/chartproduct.dart';
 import 'package:flutter/material.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
+import 'package:google_fonts/google_fonts.dart';
 
 class tongketDT extends StatefulWidget {
   const tongketDT({super.key});
@@ -42,7 +43,7 @@ class _tongketDTState extends State<tongketDT> {
                           ),
                           Text(
                             "vui long cho 1 chut..",
-                            style: TextStyle(fontSize: 30),
+                            style: GoogleFonts.aBeeZee(fontSize: 30),
                           )
                         ],
                       ));
@@ -57,7 +58,7 @@ class _tongketDTState extends State<tongketDT> {
                           ),
                           Text(
                             "vui long cho 1 chut..",
-                            style: TextStyle(fontSize: 30),
+                            style: GoogleFonts.aBeeZee(fontSize: 30),
                           )
                         ],
                       ));
@@ -78,12 +79,12 @@ class _tongketDTState extends State<tongketDT> {
                         children: [
                           Text(
                             "tong tien:",
-                            style: TextStyle(
+                            style: GoogleFonts.aBeeZee(
                                 fontSize: 25, fontWeight: FontWeight.w600),
                           ),
                           Text(
                             "${tongtien}k",
-                            style: TextStyle(
+                            style: GoogleFonts.aBeeZee(
                                 fontSize: 25, fontWeight: FontWeight.w600),
                           ),
                         ],
@@ -98,7 +99,7 @@ class _tongketDTState extends State<tongketDT> {
                         ),
                         Text(
                           "vui long cho 1 chut..",
-                          style: TextStyle(fontSize: 30),
+                          style: GoogleFonts.aBeeZee(fontSize: 30),
                         )
                       ],
                     ));
@@ -131,7 +132,7 @@ class bangthongke extends StatelessWidget {
                 ),
                 Text(
                   "vui long cho 1 chut..",
-                  style: TextStyle(fontSize: 30),
+                  style: GoogleFonts.aBeeZee(fontSize: 30),
                 )
               ],
             ));
@@ -145,7 +146,7 @@ class bangthongke extends StatelessWidget {
                 ),
                 Text(
                   "vui long cho 1 chut..",
-                  style: TextStyle(fontSize: 30),
+                  style: GoogleFonts.aBeeZee(fontSize: 30),
                 )
               ],
             ));
@@ -230,7 +231,7 @@ class bangthongke extends StatelessWidget {
               ),
               Text(
                 "vui long cho 1 chut..",
-                style: TextStyle(fontSize: 30),
+                style: GoogleFonts.aBeeZee(fontSize: 30),
               )
             ],
           ));
