@@ -6,6 +6,7 @@ import 'package:coffemanger/userscreen/pageview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
+import 'package:google_fonts/google_fonts.dart';
 // import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 
 import 'admin/admincategroies.dart';
@@ -29,7 +30,10 @@ class _trangtruState extends State<trangtru> {
     return SafeArea(
         child: Scaffold(
       appBar: AppBar(
-        title: const Text("COFFEE WINDS"),
+        title: Text(
+          "COFFEE WINDS",
+          style: GoogleFonts.anton(),
+        ),
         centerTitle: true,
         elevation: 1,
       ),
@@ -49,11 +53,12 @@ class _trangtruState extends State<trangtru> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    child: Image.asset("assets/images/pngegg.png"),
+                    child: Image.asset("assets/images/logocf.png"),
                   ),
                   Text(
-                    "xin chao quy khach",
-                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.w800),
+                    "Xin chào quý khách",
+                    style: GoogleFonts.roboto(
+                        fontSize: 30, fontWeight: FontWeight.w700),
                   ),
                   SizedBox(
                     height: 10,
@@ -63,7 +68,7 @@ class _trangtruState extends State<trangtru> {
                     decoration: InputDecoration(
                         fillColor: Colors.grey,
                         focusColor: Colors.grey,
-                        labelText: "vui long nhap ten",
+                        labelText: "vui lòng nhập tên",
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(12))),
                     validator: (value) {
@@ -163,7 +168,10 @@ class _trangtruState extends State<trangtru> {
                         }
                       }
                     },
-                    child: Text("xac nhan"),
+                    child: Text(
+                      "xac nhan",
+                      style: GoogleFonts.roboto(),
+                    ),
                   )
                 ],
               ),

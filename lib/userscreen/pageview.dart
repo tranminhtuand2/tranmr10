@@ -8,6 +8,7 @@ import 'package:coffemanger/data/remote_data_source/firebase_helper_milktea.dart
 import 'package:coffemanger/userscreen/cartview.dart';
 import 'package:coffemanger/userscreen/pagedetail.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../data/model/cart.dart';
 
@@ -139,13 +140,13 @@ class _pageviewState extends State<pageview>
                   children: [
                     Text(
                       "Name: ${user}",
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                      style: GoogleFonts.aBeeZee(
+                          fontSize: 20, fontWeight: FontWeight.w500),
                     ),
                     Text(
                       "Table: ${number}",
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                      style: GoogleFonts.aBeeZee(
+                          fontSize: 20, fontWeight: FontWeight.w500),
                     ),
                   ],
                 ),
@@ -160,7 +161,7 @@ class _pageviewState extends State<pageview>
                     child: Badge(
                         badgeContent: Text(
                           '${snapshot.data?.length}',
-                          style: TextStyle(color: Colors.white),
+                          style: GoogleFonts.aBeeZee(color: Colors.white),
                         ),
                         animationDuration: Duration(milliseconds: 300),
                         child: Icon(Icons.shopping_cart_outlined)),
@@ -212,9 +213,9 @@ class _pageviewState extends State<pageview>
           const SizedBox(
             height: 10,
           ),
-          const Text(
-            "coffee drinks",
-            style: TextStyle(
+          Text(
+            "Coffee-Drinks",
+            style: GoogleFonts.aBeeZee(
                 fontSize: 25, fontWeight: FontWeight.w600, color: Colors.brown),
           ),
           const SizedBox(
@@ -274,7 +275,7 @@ class _pageviewState extends State<pageview>
                               ),
                               Text(
                                 productcf.namecf,
-                                style: TextStyle(
+                                style: GoogleFonts.aBeeZee(
                                     fontSize: 14,
                                     letterSpacing: 0.5,
                                     fontWeight: FontWeight.w700),
@@ -285,14 +286,14 @@ class _pageviewState extends State<pageview>
                                 children: [
                                   Text(
                                     "loai: ${productcf.typecf}",
-                                    style: TextStyle(
+                                    style: GoogleFonts.aBeeZee(
                                         fontSize: 12,
                                         letterSpacing: 0.5,
                                         fontWeight: FontWeight.w700),
                                   ),
                                   Text(
                                     "price: ${productcf.pricecf}",
-                                    style: TextStyle(
+                                    style: GoogleFonts.aBeeZee(
                                         fontSize: 12,
                                         letterSpacing: 0.5,
                                         color: Colors.blue,
@@ -345,9 +346,9 @@ class _pageviewState extends State<pageview>
           const SizedBox(
             height: 10,
           ),
-          const Text(
+          Text(
             "MILK TEA",
-            style: TextStyle(
+            style: GoogleFonts.aBeeZee(
                 fontSize: 25, fontWeight: FontWeight.w600, color: Colors.brown),
           ),
           const SizedBox(
@@ -407,7 +408,7 @@ class _pageviewState extends State<pageview>
                               ),
                               Text(
                                 productcf.namecf,
-                                style: TextStyle(
+                                style: GoogleFonts.aBeeZee(
                                     fontSize: 14,
                                     letterSpacing: 0.5,
                                     fontWeight: FontWeight.w700),
@@ -418,14 +419,14 @@ class _pageviewState extends State<pageview>
                                 children: [
                                   Text(
                                     "loai: ${productcf.typecf}",
-                                    style: TextStyle(
+                                    style: GoogleFonts.aBeeZee(
                                         fontSize: 12,
                                         letterSpacing: 0.5,
                                         fontWeight: FontWeight.w700),
                                   ),
                                   Text(
                                     "price: ${productcf.pricecf}",
-                                    style: TextStyle(
+                                    style: GoogleFonts.aBeeZee(
                                         fontSize: 12,
                                         letterSpacing: 0.5,
                                         color: Colors.blue,
@@ -477,9 +478,9 @@ class _pageviewState extends State<pageview>
           const SizedBox(
             height: 10,
           ),
-          const Text(
-            "coffee drinks",
-            style: TextStyle(
+          Text(
+            "Healthy-drinks",
+            style: GoogleFonts.aBeeZee(
                 fontSize: 25, fontWeight: FontWeight.w600, color: Colors.brown),
           ),
           const SizedBox(
@@ -539,7 +540,7 @@ class _pageviewState extends State<pageview>
                               ),
                               Text(
                                 productcf.namecf,
-                                style: TextStyle(
+                                style: GoogleFonts.aBeeZee(
                                     fontSize: 14,
                                     letterSpacing: 0.5,
                                     fontWeight: FontWeight.w700),
@@ -550,14 +551,14 @@ class _pageviewState extends State<pageview>
                                 children: [
                                   Text(
                                     "loai: ${productcf.typecf}",
-                                    style: TextStyle(
+                                    style: GoogleFonts.aBeeZee(
                                         fontSize: 12,
                                         letterSpacing: 0.5,
                                         fontWeight: FontWeight.w700),
                                   ),
                                   Text(
                                     "price: ${productcf.pricecf}",
-                                    style: TextStyle(
+                                    style: GoogleFonts.aBeeZee(
                                         fontSize: 12,
                                         letterSpacing: 0.5,
                                         color: Colors.blue,
@@ -609,9 +610,9 @@ class _pageviewState extends State<pageview>
           const SizedBox(
             height: 10,
           ),
-          const Text(
-            "coffee drinks",
-            style: TextStyle(
+          Text(
+            "Gas-Drinks",
+            style: GoogleFonts.aBeeZee(
                 fontSize: 25, fontWeight: FontWeight.w600, color: Colors.brown),
           ),
           const SizedBox(
@@ -671,7 +672,7 @@ class _pageviewState extends State<pageview>
                               ),
                               Text(
                                 productcf.namecf,
-                                style: TextStyle(
+                                style: GoogleFonts.aBeeZee(
                                     fontSize: 14,
                                     letterSpacing: 0.5,
                                     fontWeight: FontWeight.w700),
@@ -682,14 +683,14 @@ class _pageviewState extends State<pageview>
                                 children: [
                                   Text(
                                     "loai: ${productcf.typecf}",
-                                    style: TextStyle(
+                                    style: GoogleFonts.aBeeZee(
                                         fontSize: 12,
                                         letterSpacing: 0.5,
                                         fontWeight: FontWeight.w700),
                                   ),
                                   Text(
                                     "price: ${productcf.pricecf}",
-                                    style: TextStyle(
+                                    style: GoogleFonts.aBeeZee(
                                         fontSize: 12,
                                         letterSpacing: 0.5,
                                         color: Colors.blue,

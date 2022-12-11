@@ -34,7 +34,6 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.brown,
       ),
       home: trangtru(),
-      //aaa
     );
   }
 }
