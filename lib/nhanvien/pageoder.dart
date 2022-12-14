@@ -3,6 +3,7 @@ import 'package:coffemanger/data/model/cart.dart';
 import 'package:coffemanger/data/model/tinhtrang.dart';
 import 'package:coffemanger/data/remote_data_source/firebase_bill.dart';
 import 'package:coffemanger/data/remote_data_source/firebase_helper_cart.dart';
+import 'package:coffemanger/userscreen/pageview.dart';
 import 'package:coffemanger/userscreen/succespage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -54,6 +55,17 @@ class _cartviewNVState extends State<cartviewNV> {
               //     color: Colors.black,
               //   ),
               // ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              onPressed: () {
+                Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          pageview(user: "cashier", number: widget.tenban),
+                    ));
+              },
+              child: Icon(Icons.add),
             ),
             body: SingleChildScrollView(
               child: StreamBuilder<List<cartmodel>>(

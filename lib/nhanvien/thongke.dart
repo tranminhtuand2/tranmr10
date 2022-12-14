@@ -69,6 +69,9 @@ class _tongketDTState extends State<tongketDT> {
 
                       for (var i = 0; i < tongket!.length; i++) {
                         tinhtien = double.parse(tongket[i].thanhtien);
+                        if (i == 0) {
+                          tongtien = 0;
+                        }
                         tongtien += tinhtien;
                         print(tongtien);
                         print(i);

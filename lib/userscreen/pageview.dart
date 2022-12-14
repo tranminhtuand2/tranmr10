@@ -1,10 +1,12 @@
 import 'package:badges/badges.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:coffemanger/data/model/product_fb.dart';
 import 'package:coffemanger/data/remote_data_source/firebase_helper.dart';
 import 'package:coffemanger/data/remote_data_source/firebase_helper_cart.dart';
 import 'package:coffemanger/data/remote_data_source/firebase_helper_gasdrink.dart';
 import 'package:coffemanger/data/remote_data_source/firebase_helper_heathy.dart';
 import 'package:coffemanger/data/remote_data_source/firebase_helper_milktea.dart';
+import 'package:coffemanger/nhanvien/pagenhanvien.dart';
 import 'package:coffemanger/userscreen/cartview.dart';
 import 'package:coffemanger/userscreen/pagedetail.dart';
 import 'package:flutter/material.dart';
@@ -25,6 +27,47 @@ class _pageviewState extends State<pageview>
     with SingleTickerProviderStateMixin {
   double screenHeight = 0;
   double screenWidth = 0;
+  String find = "";
+  List SearchResult = [];
+  void searchfromfirebase(String query) async {
+    final result = await FirebaseFirestore.instance
+        .collection('productcf')
+        .where('namecf', isEqualTo: query)
+        .get();
+    setState(() {
+      SearchResult = result.docs.map((e) => e.data()).toList();
+    });
+  }
+
+  void searchfromfirebasetea(String query) async {
+    final result = await FirebaseFirestore.instance
+        .collection('producthealthy')
+        .where('namecf', isEqualTo: query)
+        .get();
+    setState(() {
+      SearchResult = result.docs.map((e) => e.data()).toList();
+    });
+  }
+
+  void searchfromfirebaseht(String query) async {
+    final result = await FirebaseFirestore.instance
+        .collection('productmilktea')
+        .where('namecf', isEqualTo: query)
+        .get();
+    setState(() {
+      SearchResult = result.docs.map((e) => e.data()).toList();
+    });
+  }
+
+  void searchfromfirebasegas(String query) async {
+    final result = await FirebaseFirestore.instance
+        .collection('gasdrinks')
+        .where('namecf', isEqualTo: query)
+        .get();
+    setState(() {
+      SearchResult = result.docs.map((e) => e.data()).toList();
+    });
+  }
 
   late final TabController _tapController =
       TabController(length: 4, vsync: this);
@@ -68,6 +111,16 @@ class _pageviewState extends State<pageview>
                           borderSide: BorderSide.none,
                         ),
                       ),
+                      onChanged: (query) {
+                        setState(() {
+                          find = query;
+                        });
+
+                        searchfromfirebase(query);
+                        searchfromfirebaseht(query);
+                        searchfromfirebasetea(query);
+                        searchfromfirebasegas(query);
+                      },
                     ),
                   ),
                 ),
@@ -107,15 +160,16 @@ class _pageviewState extends State<pageview>
               ],
             ),
             Expanded(
-                child: TabBarView(
-              controller: _tapController,
-              children: [
-                coffedrinksview(),
-                milkteasviews(),
-                healthyview(),
-                gasdrinksview(),
-              ],
-            ))
+              child: TabBarView(
+                controller: _tapController,
+                children: [
+                  find == "" ? coffedrinksview() : timkiem(),
+                  find == "" ? milkteasviews() : timkiem(),
+                  find == "" ? healthyview() : timkiem(),
+                  find == "" ? gasdrinksview() : timkiem(),
+                ],
+              ),
+            ),
           ],
         ),
       ),
@@ -177,7 +231,18 @@ class _pageviewState extends State<pageview>
                     );
                   },
                 );
-              })
+              }),
+          IconButton(
+              onPressed: () {
+                if (widget.user == "cashier") {
+                  Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => pageNhanVien(nameNV: "cashier"),
+                      ));
+                }
+              },
+              icon: Icon(Icons.admin_panel_settings)),
         ],
       );
 
@@ -734,6 +799,98 @@ class _pageviewState extends State<pageview>
             },
           ),
         ],
+      );
+  Widget timkiem() => Expanded(
+        child: GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            childAspectRatio: 3 / 4,
+            crossAxisSpacing: 20,
+            mainAxisSpacing: 8,
+          ),
+          itemCount: SearchResult.length,
+          itemBuilder: (context, index) {
+            return Container(
+              child: Stack(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    // ignore: prefer_const_literals_to_create_immutables
+                    children: [
+                      const SizedBox(
+                        height: 35,
+                      ),
+                      ClipPath(
+                        clipper: CustomerClipPath(),
+                        child: Container(
+                          height: 120,
+                          width: double.infinity,
+                          color: Color.fromARGB(255, 210, 235, 214),
+                          // color: Color.fromARGB(255, 86, 105, 89),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 20, vertical: 10),
+                          alignment: Alignment.bottomLeft,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 6,
+                      ),
+                      Text(
+                        SearchResult[index]['namecf'],
+                        style: GoogleFonts.aBeeZee(
+                            fontSize: 14,
+                            letterSpacing: 0.5,
+                            fontWeight: FontWeight.w700),
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "loai: ${SearchResult[index]['phanloai']}",
+                            style: GoogleFonts.aBeeZee(
+                                fontSize: 12,
+                                letterSpacing: 0.5,
+                                fontWeight: FontWeight.w700),
+                          ),
+                          Text(
+                            "price: ${SearchResult[index]['giatien']}",
+                            style: GoogleFonts.aBeeZee(
+                                fontSize: 12,
+                                letterSpacing: 0.5,
+                                color: Colors.blue,
+                                fontWeight: FontWeight.w800),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                  Positioned(
+                    left: 30,
+                    top: 15,
+                    child: GestureDetector(
+                      onTap: () {
+                        print(widget.number);
+
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => pageviewdetail(
+                                cfdrink: SearchResult[index],
+                                tenban: widget.number),
+                          ),
+                        );
+                      },
+                      child: Image.network(
+                        SearchResult[index]['image'],
+                        height: 140,
+                        width: 100,
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            );
+          },
+        ),
       );
 }
 
