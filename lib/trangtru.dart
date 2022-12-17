@@ -31,7 +31,7 @@ class _trangtruState extends State<trangtru> {
         child: Scaffold(
       appBar: AppBar(
         title: Text(
-          "COFFEE WINDS",
+          "COFFEE GIÓ",
           style: GoogleFonts.anton(),
         ),
         centerTitle: true,
@@ -73,7 +73,7 @@ class _trangtruState extends State<trangtru> {
                             borderRadius: BorderRadius.circular(12))),
                     validator: (value) {
                       if (value!.isEmpty) {
-                        return 'Your name';
+                        return 'vui lòng nhập tên';
                       }
                       return null;
                     },
@@ -84,7 +84,7 @@ class _trangtruState extends State<trangtru> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Text(qrcode == '' ? "please scan QR" : qrcode,
+                      Text(qrcode == '' ? "vui lòng quét mã" : qrcode,
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.w600)),
                       ElevatedButton(
@@ -128,7 +128,7 @@ class _trangtruState extends State<trangtru> {
                                   AdminCategroies(admin: _nameuser.text),
                             ),
                           );
-                        } else if (_nameuser.text == "pk02579") {
+                        } else if (_nameuser.text == "minhtuan") {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -154,14 +154,14 @@ class _trangtruState extends State<trangtru> {
                           showDialog(
                             context: context,
                             builder: (context) => AlertDialog(
-                              title: Text("error message"),
-                              content: Text("please scanQRcode"),
+                              title: Text("lỗi quét mã"),
+                              content: Text("quét mã không đúng"),
                               actions: [
                                 TextButton(
                                     onPressed: () {
                                       Navigator.pop(context);
                                     },
-                                    child: Text("confirm"))
+                                    child: Text("xác nhận"))
                               ],
                             ),
                           );
@@ -169,7 +169,7 @@ class _trangtruState extends State<trangtru> {
                       }
                     },
                     child: Text(
-                      "xac nhan",
+                      "xác nhận",
                       style: GoogleFonts.roboto(),
                     ),
                   )

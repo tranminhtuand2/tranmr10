@@ -78,7 +78,7 @@ class _pageviewdetailState extends State<pageviewdetail> {
               )),
           centerTitle: true,
           title: Text(
-            "detail product",
+            "Chi Tiết",
             style: GoogleFonts.aBeeZee(color: Colors.amber),
           ),
         ),
@@ -172,7 +172,7 @@ class _pageviewdetailState extends State<pageviewdetail> {
                 color: Colors.black,
               ),
               Text(
-                "product Description",
+                "miêu tả sản phẩm",
                 style: GoogleFonts.aBeeZee(
                     fontSize: 18, fontWeight: FontWeight.w700),
               ),
@@ -279,7 +279,7 @@ class _pageviewdetailState extends State<pageviewdetail> {
                 ),
                 Container(
                   height: 40,
-                  width: 60,
+                  width: 80,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.lightBlueAccent,
@@ -313,11 +313,13 @@ class _pageviewdetailState extends State<pageviewdetail> {
                       //             );
                     },
                     child: Text(
-                      "Cart",
+                      "Đặt Hàng",
                       style: GoogleFonts.aBeeZee(
-                          fontSize: 13,
+                          fontSize: 12,
                           fontWeight: FontWeight.w700,
                           color: Color.fromARGB(255, 79, 34, 186)),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                     ),
                   ),
                 ),

@@ -28,7 +28,7 @@ class _cartviewState extends State<cartview> {
               foregroundColor: Colors.black,
               centerTitle: true,
               title: Text(
-                "cart ${widget.tenban}",
+                "Danh Sách ${widget.tenban}",
                 style: GoogleFonts.aBeeZee(color: Colors.black),
               ),
               elevation: 0,
@@ -212,7 +212,7 @@ class _cartviewState extends State<cartview> {
                                   ));
                               print(widget.tenban);
                             },
-                            child: Text("ORDER"))
+                            child: Text("XÁC NHẬN ĐƠN HÀNG"))
                         // Padding(
                         //   padding: const EdgeInsets.all(8.0),
                         //   child: Container(

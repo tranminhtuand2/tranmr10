@@ -102,7 +102,7 @@ class _pageviewState extends State<pageview>
                         fontSize: 12,
                       ),
                       decoration: InputDecoration(
-                        hintText: "search product",
+                        hintText: "nhập tên sản phẩm",
                         hintStyle:
                             const TextStyle(color: Colors.grey, fontSize: 12),
                         prefixIcon: const Icon(Icons.search),
@@ -115,7 +115,6 @@ class _pageviewState extends State<pageview>
                         setState(() {
                           find = query;
                         });
-
                         searchfromfirebase(query);
                         searchfromfirebaseht(query);
                         searchfromfirebasetea(query);
@@ -153,10 +152,10 @@ class _pageviewState extends State<pageview>
               labelPadding: EdgeInsets.only(right: 10),
               overlayColor: MaterialStateProperty.all(Colors.transparent),
               tabs: [
-                createrTabBar(Icons.local_bar, "coffee"),
-                createrTabBar(Icons.local_bar, "milkteas"),
-                createrTabBar(Icons.local_bar, "healthy"),
-                createrTabBar(Icons.local_bar, "gasdrinks"),
+                createrTabBar(Icons.local_bar, "cà phê"),
+                createrTabBar(Icons.local_bar, "Trà"),
+                createrTabBar(Icons.local_bar, "Sức Khỏe"),
+                createrTabBar(Icons.local_bar, "Nước ngọt"),
               ],
             ),
             Expanded(
